@@ -1,0 +1,7 @@
+{
+  "name": "PPM-Rodrigo-Vinicius",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

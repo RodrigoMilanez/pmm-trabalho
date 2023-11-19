@@ -8,14 +8,25 @@ import { Component, OnInit } from '@angular/core';
 export class Q1Page implements OnInit {
 
   mensagem = '';
-  nome: string = '';
+  litros= 0;
+
+  distancia = 0;
+
+  kmpl = 0;
 
   constructor() {}
 
   clickNome() {
-    this.mensagem = this.nome
-      ? `Hello world, ${this.nome.trim()}!`
-      : '';
+    this.kmpl= this.distancia/this.litros;
+    if (this.kmpl >= 13) {
+      this.mensagem =  `Economico, ${this.kmpl} Km por litro`;
+    }else if (this.kmpl >= 10) {
+      this.mensagem =  `Normal, ${this.kmpl} Km por litro`;
+    } else {
+      this.mensagem =  `Gastador, ${this.kmpl} Km por litro`;
+    }
+
+    
   }
 
   ngOnInit() {

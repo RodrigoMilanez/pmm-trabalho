@@ -1,0 +1,38 @@
+<ion-list>
+  <ion-list-header>
+    Qual o seu IMC:
+  </ion-list-header>
+
+  <ion-item>
+    <ion-input
+      label="Digite sua altura:"
+      labelPlacement="floating"
+      placeholder="altura"
+      [(ngModel)]="altura"
+    ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      label="Digite seu peso:"
+      labelPlacement="floating"
+      placeholder="peso"
+      [(ngModel)]="peso"
+    ></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-button
+      size="small"
+      (click)="clickIMC()"
+      >OK</ion-button>
+  </ion-item>
+
+  <ion-item *ngIf="mensagem">
+    <ion-text color="primary">{{mensagem}}</ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-text color="primary">{{diagnostico}}</ion-text>
+  </ion-item>
+</ion-list>

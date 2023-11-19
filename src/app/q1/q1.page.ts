@@ -16,7 +16,7 @@ export class Q1Page implements OnInit {
 
   constructor() {}
 
-  clickNome() {
+  clickKmpl() {
     this.kmpl= this.distancia/this.litros;
     if (this.kmpl >= 13) {
       this.mensagem =  `Economico, ${this.kmpl} Km por litro`;

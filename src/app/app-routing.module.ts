@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'q1',
     loadChildren: () => import('./q1/q1.module').then( m => m.Q1PageModule)
+  },
+  {
+    path: 'q2',
+    loadChildren: () => import('./q2/q2.module').then( m => m.Q2PageModule)
   }
 ];
 

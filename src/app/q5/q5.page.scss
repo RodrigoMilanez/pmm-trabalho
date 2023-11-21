@@ -1,0 +1,28 @@
+
+
+ion-content {
+  .calculator-grid {
+    text-align: center;
+
+    ion-row {
+      margin-top: 10px;
+    }
+
+    ion-input {
+      margin-bottom: 10px;
+    }
+
+    .calculator-title {
+      font-size: 1.5em;
+    }
+
+    .resultado {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    ion-button {
+      margin-top: 10px;
+    }
+  }
+}

@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'q4',
     loadChildren: () => import('./q4/q4.module').then( m => m.Q4PageModule)
+  },
+  {
+    path: 'q5',
+    loadChildren: () => import('./q5/q5.module').then( m => m.Q5PageModule)
   }
 ];
 

@@ -16,6 +16,8 @@ export class Q1Page implements OnInit {
 
   constructor() {}
 
+  
+
   clickKmpl() {
     this.kmpl= this.distancia/this.litros;
     if (this.kmpl >= 13) {

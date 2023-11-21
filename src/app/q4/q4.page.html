@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Lista de Tarefas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item  *ngFor="let task of tasks" >
+      <ion-label id="tarefa" [class.completed]="task.completed">{{ task.name }}</ion-label>
+      <ion-button (click)="completeTask(task)">Concluir</ion-button>
+      <ion-button color="danger" (click)="removeTask(task)">Excluir</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-input [(ngModel)]="newTask" placeholder="Digite uma nova tarefa"></ion-input>
+    <ion-button (click)="addTask()">Adicionar</ion-button>
+  </ion-item>
+</ion-content>

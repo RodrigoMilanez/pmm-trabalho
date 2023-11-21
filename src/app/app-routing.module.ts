@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'q3',
     loadChildren: () => import('./q3/q3.module').then( m => m.Q3PageModule)
+  },
+  {
+    path: 'q4',
+    loadChildren: () => import('./q4/q4.module').then( m => m.Q4PageModule)
   }
 ];
 

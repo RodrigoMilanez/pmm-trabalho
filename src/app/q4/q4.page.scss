@@ -1,0 +1,22 @@
+  ion-label#tarefa.completed {
+    color: green;
+    text-decoration: line-through;
+  }
+
+  ion-label#tarefa {
+    color: red; 
+    &.completed {
+      color: green;
+      text-decoration: line-through;
+    }
+  }
+
+  ion-label#tarefa {
+    &.completed {
+      color: green;
+      text-decoration: line-through;
+    }
+    color: red; 
+  }
+
+  

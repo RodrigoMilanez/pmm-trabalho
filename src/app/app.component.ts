@@ -9,7 +9,8 @@ export class AppComponent {
     { title: 'Seu carro é economico?', url: '/q1', icon: 'none' },
     { title: 'Qual a sua faixa etária?', url: '/q2', icon: 'none' },
     { title: 'Qual o seu IMC?', url: '/q3', icon: 'none' },
-    { title: 'Lista de tarefas a fazer', url: '/q4', icon: 'none' }
+    { title: 'Lista de tarefas a fazer', url: '/q4', icon: 'none' },
+    { title: 'Calculadora', url: '/q5', icon: 'none' }
   ];
   public labels = [''];
   constructor() {}
